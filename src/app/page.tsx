@@ -1,3 +1,4 @@
+// "use client";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Blog from "@/components/Blog";
@@ -11,27 +12,32 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 // import Services from "@/components/Services";
 import { Metadata } from "next";
+import Emailpopup from "@/components/Emailpopup";
+import CurrencyConverter from "@/components/CurrencyConverter";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Startup and SaaS",
-  description: "This is Home for Startup Nextjs Template",
+  title: "TradeCreditBancorp",
+  description: "This is Home for TradeCreditBancorp",
   // other metadata
 };
 
 export default function Home() {
   return (
     <>
+    <Emailpopup />
       <ScrollUp />
       <Hero />
       <Features />
       <Video />
-      <Brands />
+      {/* <Brands /> */}
       <AboutSectionOne />
       <AboutSectionTwo />
       <Testimonials />
-      <Pricing />
+      {/*  <Pricing /> */}
       <Blog />
       <Contact />
+      <CurrencyConverter />
+      {/* <Services /> */}
     </>
   );
 }

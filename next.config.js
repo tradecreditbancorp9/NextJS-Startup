@@ -6,9 +6,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.sanity.io",
         port: "",
+        
       },
     ],
   },
+  devIndicators: false
 };
 
 module.exports = nextConfig;

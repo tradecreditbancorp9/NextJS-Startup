@@ -9,15 +9,18 @@ const Features = () => {
         <div className="container">
           <SectionTitle
             title="Expert Trade Finance Services"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="TradeCreditBancorp is a premier global trade company renowned for its expertise in banking services and securities."
             center
           />
 
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
-            ))}
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3 hover:zoom-in transition-all duration-300 ease-in-out border border-[#E5E7EB] rounded-lg p-8 md:p-10 lg:p-12">
+            
+            {featuresData.map((feature, id) => (
+              <div key={id} className=" hover:zoom-in transition-all duration-300 ease-in-out border border-[#E5E7EB] rounded-lg p-8 md:p-10 lg:p-12 box-shadow-2"><SingleFeature key={feature.id} feature={feature} />
+            </div> ))}
+            
           </div>
+         
         </div>
       </section>
     </>

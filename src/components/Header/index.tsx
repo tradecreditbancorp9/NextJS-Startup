@@ -57,16 +57,16 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/trade.jpeg"
+                  src="/images/logo/trade5.jpg"
                   alt="logo"
-                  width={140}
+                  width={150}
                   height={30}
                   className="w-full h-30 dark:hidden"
                 />
                 <Image
-                  src="/images/logo/trade.jpeg"
+                  src="/images/logo/trade5.jpg"
                   alt="logo"
-                  width={140}
+                  width={150}
                   height={30}
                   className="hidden w-full  h-30 dark:block"
                 />
@@ -171,9 +171,9 @@ const Header = () => {
                 >
                   Sign Up
                 </Link>
-                <div>
+                {/* <div>
                   <ThemeToggler />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

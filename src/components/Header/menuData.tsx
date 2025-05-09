@@ -1,3 +1,4 @@
+"use client";
 import { Menu } from "@/types/menu";
 
 const menuData: Menu[] = [
@@ -32,28 +33,41 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 41,
-        title: "Bank Securities",
+        title: "Card Issueing",
         path: "/contact",
         newTab: false,
       },
       {
         id: 42,
-        title: "Corporate Finance",
+        title: "Crypto Cards",
         path: "/contact",
         newTab: false,
       },
       {
         id: 43,
-        title: "Investment Banking",
+        title: "Prepaid / Debit / Credit cards",
         path: "/contact",
         newTab: false,
       },
       {
         id: 44,
-        title: "Financial Advisory",
+        title: "Gift Cards",
         path: "/contact",
         newTab: false,
       },
+      {
+        id: 44,
+        title: "Corporate Expense Cards",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Business IBANs",
+        path: "/contact",
+        newTab: false,
+      },
+      
     ],
   },
   {
@@ -107,6 +121,12 @@ const menuData: Menu[] = [
         id: 48,
         title: "Error Page",
         path: "/error",
+        newTab: false,
+      },
+      {
+        id: 48,
+        title: "currency converter",
+        path: "/currencyconverter",
         newTab: false,
       },
     ],

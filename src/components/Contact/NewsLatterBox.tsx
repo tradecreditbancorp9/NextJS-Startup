@@ -11,8 +11,12 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates
       </h3>
       <p className="border-body-color/25 text-body-color mb-11 border-b pb-11 text-base leading-relaxed dark:border-white/25">
-        Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
-        massa quis lectus.
+     <b> Stay Ahead in Global Trade!</b>
+     <br></br>
+Subscribe to the TradeCreditBancorp newsletter and receive the latest updates on international finance, banking instruments, and market trends—straight to your inbox.
+Trusted insights. No spam. Unsubscribe anytime.
+
+
       </p>
       <div>
         <input
@@ -60,15 +64,15 @@ const NewsLatterBox = () => {
                 y2="15.3509"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                {/* <stop
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
             </defs>
           </svg>
@@ -96,15 +100,15 @@ const NewsLatterBox = () => {
                 y2="10.2511"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                {/* <stop
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
             </defs>
           </svg>
@@ -132,15 +136,15 @@ const NewsLatterBox = () => {
                 y2="26.7564"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                {/* <stop
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0.62"
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
             </defs>
           </svg>
@@ -185,15 +189,15 @@ const NewsLatterBox = () => {
                 y2="237.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
+                {/* <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
               <linearGradient
                 id="paint1_linear_1028_603"
@@ -203,15 +207,15 @@ const NewsLatterBox = () => {
                 y2="212.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
+                {/* <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
               <linearGradient
                 id="paint2_linear_1028_603"
@@ -221,15 +225,15 @@ const NewsLatterBox = () => {
                 y2="221.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
+                {/* <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
               <linearGradient
                 id="paint3_linear_1028_603"
@@ -239,15 +243,15 @@ const NewsLatterBox = () => {
                 y2="188.617"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop
+                {/* <stop
                   offset="0.328125"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                 />
                 <stop
                   offset="1"
-                  stopColor={theme === "light" ? "#4A6CF7" : "#fff"}
+                  stopColor={theme === "light" ? "#4A6CF7" : "#ffffff"}
                   stopOpacity="0"
-                />
+                /> */}
               </linearGradient>
             </defs>
           </svg>

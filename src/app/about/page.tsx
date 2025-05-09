@@ -12,14 +12,14 @@ export const metadata: Metadata = {
 
 const AboutPage = () => {
   return (
-    <>
+    <div className="pt-16 md:pt-20 lg:pt-28">
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
-    </>
+    </div>
   );
 };
 

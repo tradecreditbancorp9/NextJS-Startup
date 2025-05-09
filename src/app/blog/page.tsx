@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 
 const Blog = () => {
   return (
-    <>
+    <div className="pt-16 md:pt-20 lg:pt-28">
       <Breadcrumb
         pageName="Blog Grid"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="This is Blog Page for Trade Credit Bancorp."
       />
 
       <section className="pt-[120px] pb-[120px]">
@@ -92,8 +92,11 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 
 export default Blog;
+// imporrt int worf msion  
+// import maim 
+// impooert dasta , pg 

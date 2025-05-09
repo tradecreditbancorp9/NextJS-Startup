@@ -21,7 +21,8 @@ const SectionTitle = ({
           {title}
         </h2>
         <p className="text-base leading-relaxed! text-body-color md:text-lg">
-          {paragraph}
+          Our team of experts is dedicated to providing you with the best
+          solutions tailored to your unique needs. We understand the complexities
         </p>
       </div>
     </>
