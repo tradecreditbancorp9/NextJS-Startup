@@ -1,6 +1,7 @@
 import SingleBlog from "@/components/Blog/SingleBlog";
 import blogData from "@/components/Blog/blogData";
 import Breadcrumb from "@/components/Common/Breadcrumb";
+import Blog1 from "@/components/Blog";
 
 import { Metadata } from "next";
 
@@ -17,8 +18,8 @@ const Blog = () => {
         pageName="Blog Grid"
         description="This is Blog Page for Trade Credit Bancorp."
       />
-
-      <section className="pt-[120px] pb-[120px]">
+      <Blog1 />
+      {/* <section className="pt-[120px] pb-[120px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             {blogData.map((blog) => (
@@ -91,7 +92,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

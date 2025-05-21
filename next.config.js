@@ -6,14 +6,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "cdn.sanity.io",
         port: "",
-
+        
       },
     ],
   },
-  devIndicators: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  devIndicators: false
 };
 
 module.exports = nextConfig;

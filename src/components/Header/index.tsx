@@ -12,7 +12,7 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
-
+const pathname = usePathname();
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   const handleStickyNavbar = () => {
@@ -27,16 +27,19 @@ const Header = () => {
   });
 
   // submenu handler
-  const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(-1);
-    } else {
-      setOpenIndex(index);
-    }
-  };
+ const [openIndex, setOpenIndex] = useState<number | null>(null);
+const [openSubIndex, setOpenSubIndex] = useState<number | null>(null);
 
+const handleSubmenu = (index: number) => {
+  setOpenIndex(openIndex === index ? null : index);
+  setOpenSubIndex(null); // Close nested submenus on new top-level open
+};
+
+const handleNestedSubmenu = (index: number) => {
+  setOpenSubIndex(openSubIndex === index ? null : index);
+};
   const usePathName = usePathname();
+   const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -104,7 +107,7 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
+                  {/* <ul className="block lg:flex lg:space-x-12">
                     {menuData.map((menuItem, index) => (
                       <li key={index} className="group relative">
                         {menuItem.path ? (
@@ -155,7 +158,89 @@ const Header = () => {
                         )}
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
+                  <ul className="block lg:flex lg:space-x-12">
+  {menuData.map((menuItem, index) => (
+    <li key={index} className="relative">
+      {menuItem.submenu ? (
+        <>
+          <p
+            onClick={() => handleSubmenu(index)}
+            className="cursor-pointer flex items-center justify-between py-2 text-base text-dark dark:text-white/70 lg:py-6 hover:text-primary dark:hover:text-white"
+          >
+            {menuItem.title}
+            <svg width="20" height="20" className="ml-2">
+              <path
+                d="M6 8L12 14L18 8"
+                stroke="currentColor"
+                strokeWidth="2"
+                fill="none"
+              />
+            </svg>
+          </p>
+          <div
+            className={`lg:absolute left-0 top-full z-20 mt-2 w-[250px] rounded-md bg-white dark:bg-dark p-4 shadow-lg ${
+              openIndex === index ? "block" : "hidden"
+            }`}
+          >
+            {menuItem.submenu.map((submenuItem, subIndex) => (
+              <div key={submenuItem.id} className="relative">
+                {submenuItem.submenu ? (
+                  <>
+                    <p
+                      onClick={() => handleNestedSubmenu(subIndex)}
+                      className="cursor-pointer flex justify-between items-center py-2.5 text-sm text-dark dark:text-white/70 hover:text-primary dark:hover:text-white"
+                    >
+                      {submenuItem.title}
+                      <svg width="16" height="16">
+                        <path
+                          d="M6 4L12 8L6 12"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          fill="none"
+                        />
+                      </svg>
+                    </p>
+                    <div
+                      className={`absolute left-full top-0 z-30 w-[250px] rounded-md bg-white dark:bg-dark p-4 shadow-lg ${
+                        openSubIndex === subIndex ? "block" : "hidden"
+                      }`}
+                    >
+                      {submenuItem.submenu.map((child) => (
+                        <Link
+                          key={child.id}
+                          href={child.path || "#"}
+                          className="block py-2.5 text-sm text-dark dark:text-white/70 hover:text-primary dark:hover:text-white"
+                        >
+                          {child.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    href={submenuItem.path || "#"}
+                    className="block py-2.5 text-sm text-dark dark:text-white/70 hover:text-primary dark:hover:text-white"
+                  >
+                    {submenuItem.title}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
+        </>
+      ) : (
+        <Link
+          href={menuItem.path}
+          className={`block py-2 text-base text-dark dark:text-white/70 lg:py-6 hover:text-primary dark:hover:text-white`}
+        >
+          {menuItem.title}
+        </Link>
+      )}
+    </li>
+  ))}
+</ul>
+
                 </nav>
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
@@ -163,7 +248,45 @@ const Header = () => {
                   href="/signin"
                   className="text-dark hidden px-7 py-3 text-base font-medium hover:opacity-70 md:block dark:text-white"
                 >
-                  Sign In
+                  <div className="relative inline-block text-left">
+      {/* Trigger Button */}
+      <button
+        onClick={() => setOpen(!open)}
+        className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
+      >
+        Sign In / Register  +
+      </button>
+
+      {/* Dropdown Menu */}
+      {open && (
+        <div className="absolute z-50 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black/10">
+          <div className="py-1">
+            <Link
+              href="/client-portal"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setOpen(false)}
+            >
+              • Client Portal
+            </Link>
+            <Link
+              href="/apply"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setOpen(false)}
+            >
+              • Apply for a Service
+            </Link>
+            <Link
+              href="/track"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              onClick={() => setOpen(false)}
+            >
+              • Track Application
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+                  
                 </Link>
                 <Link
                   href="/signup"

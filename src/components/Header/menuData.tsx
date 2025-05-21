@@ -13,62 +13,192 @@ const menuData: Menu[] = [
     title: "About",
     path: "/about",
     newTab: false,
+    submenu:[
+      {
+        id: 41,
+        title: "Our Story",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Leadership Teams",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Mission & Values",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 44,
+        title: "Compliance & Licenses",
+        path: "/about",
+        newTab: false,
+      },
+      
+
+    ]
   },
   {
     id: 33,
     title: "Blog",
     path: "/blog",
     newTab: false,
+    submenu: [
+      {
+        id: 412,
+        title: "Industry News",
+        path: "/blog",
+        newTab: false,
+      },
+      {
+        id: 423,
+        title: "Trade Finance Insights",
+        path: "/blog",
+        newTab: false,
+      },
+      {
+        id: 434,
+        title: "Compliance Updates",
+        path: "/blog",
+        newTab: false,
+      },
+      
+    ]
   },
   {
     id: 3,
     title: "Support",
-    path: "/contact",
+    path: "/support",
     newTab: false,
+    submenu: [
+      {
+        id: 412,
+        title: "FAQs",
+        path: "/support",
+        newTab: false,
+      },
+      {
+        id: 423,
+        title: "Customer Help Desk",
+        path: "/support",
+        newTab: false,
+      },
+      {
+        id: 434,
+        title: "Contact Us",
+        path: "/support",
+        newTab: false,
+      },
+      {
+        id: 445,
+        title: "Submit a Request",
+        path: "/support",
+        newTab: false,
+      },
+    ]
   },
   {
     id: 4,
     title: "Services",
     newTab: false,
-    submenu: [
+    submenu:[
+
       {
-        id: 41,
+        id: 411,
+        title: "Banking Services",
+        path: null,
+        newTab: false,
+        submenu: [
+      {
+        id: 412,
         title: "Card Issueing",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 42,
+        id: 423,
         title: "Crypto Cards",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 43,
+        id: 434,
         title: "Prepaid / Debit / Credit cards",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 44,
+        id: 445,
         title: "Gift Cards",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 44,
+        id: 446,
         title: "Corporate Expense Cards",
         path: "/contact",
         newTab: false,
       },
       {
-        id: 44,
+        id: 447,
         title: "Business IBANs",
         path: "/contact",
         newTab: false,
       },
-
+      
     ],
+      },
+      {
+        id: 428,
+        title: "Trade Services",
+        path: "/contact",
+        newTab: null,
+        submenu: [
+      {
+        id: 419,
+        title: "Letters Of Credit",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 4252,
+        title:"Standby Letter Of Credit",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 4341,
+        title: "Bank Guarantees",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 4425,
+        title: "Performance Guarantees",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 4465,
+        title: "Advance Payment Guarantees",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 4465,
+        title: "Proof of Funds",
+        path: "/contact",
+        newTab: false,
+      },
+      
+    ],
+      },
+    ]
+    
   },
   {
     id: 5,
@@ -77,60 +207,25 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 41,
-        title: "About Page",
-        path: "/about",
+        title: "How It Works",
+        path: "/overview",
         newTab: false,
       },
       {
         id: 42,
-        title: "Contact Page",
-        path: "/contact",
+        title: "Client Success Stories",
+        path:"/overview",
         newTab: false,
       },
       {
         id: 43,
-        title: "Blog Grid Page",
-        path: "/blog",
+        title: "Partnerships",
+        path:"/overview",
         newTab: false,
       },
-      // {
-      //   id: 44,
-      //   title: "Blog Sidebar Page",
-      //   path: "/blog-sidebar",
-      //   newTab: false,
-      // },
-      // {
-      //   id: 45,
-      //   title: "Blog Details Page",
-      //   path: "/blog-details",
-      //   newTab: false,
-      // },
-      {
-        id: 46,
-        title: "Sign In Page",
-        path: "/signin",
-        newTab: false,
-      },
-      {
-        id: 47,
-        title: "Sign Up Page",
-        path: "/signup",
-        newTab: false,
-      },
-      // {
-      //   id: 48,
-      //   title: "Error Page",
-      //   path: "/error",
-      //   newTab: false,
-      // },
-      // {
-      //   id: 48,
-      //   title: "currency converter",
-      //   path: "/currencyconverter",
-      //   newTab: false,
-      // },
+      
     ],
   },
-
+  
 ];
 export default menuData;

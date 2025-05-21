@@ -14,7 +14,7 @@ const featuresData: Feature[] = [
     ),
     title: "Letters Of Credit",
     paragraph:
-      "A Letter of Credit guarantees secure payment in international trade, ensuring the seller receives payment once agreed terms are met, reducing risks for both parties.",
+    "A Letter of Credit is a bank-issued guarantee ensuring payment to a seller in international trade.It assures the seller gets paid once the agreed conditions are met, reducing risk for both parties.This makes it a trusted tool for secure cross-border transactions.",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const featuresData: Feature[] = [
     ),
     title: "Standby Letter Of Credit",
     paragraph:
-      "Trade Credit Bancorp's Standby Letter of Credit ensures payment security, protecting beneficiaries if buyers fail to meet contractual obligations, fostering trust in transactions.",
+      "A Standby Letter of Credit (SBLC) is a bank's guarantee of payment in case a buyer fails to fulfill a contractual obligation.It acts as a safety net, ensuring the seller gets paid if the buyer defaults.SBLCs are commonly used to enhance trust in high-value or long-term transactions.",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const featuresData: Feature[] = [
     ),
     title: "Bank Guarantees",
     paragraph:
-      "Trade Credit Bancorp's Bank Guarantee service provides financial assurance to beneficiaries, ensuring compensation if the applicant fails to fulfill contractual obligations.",
+      "A Bank Guarantee is a promise from a bank to cover a loss if a borrower fails to meet their obligations.It provides financial security to the beneficiary, reducing risk in commercial transactions.Unlike Letters of Credit, Bank Guarantees are typically used in domestic deals or long-term projects.",
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const featuresData: Feature[] = [
     ),
     title: "Performance Guarantees",
     paragraph:
-      "Trade Credit Bancorp's Performance Guarantee assures beneficiaries that contractual obligations will be met, providing compensation if the applicant fails to deliver as agreed.",
+      "A Performance Guarantee is a type of bank guarantee ensuring that a contractor or supplier will fulfill their contractual obligations.If the party fails to perform as agreed, the beneficiary can claim compensation from the bank.These guarantees are commonly used in construction, infrastructure, and large supply contracts.",
   },
   {
     id: 5,
@@ -74,7 +74,7 @@ const featuresData: Feature[] = [
     ),
     title: "Advance Payment Guarantees",
     paragraph:
-      "Trade Credit Bancorp's Advance Payment Guarantee ensures the buyer's advance payments are secure, providing compensation if the seller fails to fulfill contract terms.",
+      "An Advance Payment Guarante ensures that a buyer's advance payment is protected if the seller fails to deliver goods or services.It allows buyers to recover their upfront funds in case of non-performance.This guarantee is widely used in large projects where advance payments are required before work begins.",
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const featuresData: Feature[] = [
     ),
     title: "Proof of Funds",
     paragraph:
-      "Trade Credit Bancorp's Proof of Funds (POF) service provides verified documentation to demonstrate a client's financial capability, building trust and credibility in high-value transactions.",
+      "Proof of Funds (POF) is a document or statement that verifies a person or entity has sufficient financial resources for a transaction.It is commonly required in real estate, trade deals, and investment agreements to show credibility.POF increases trust between parties by confirming the buyer’s ability to pay.",
   },
 ];
 export default featuresData;
