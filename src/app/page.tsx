@@ -25,14 +25,12 @@ export default function Home() {
   return (
     <>
       
-        <div>
-          <h1>Your Application is down.....!!!!!</h1>
-        </div>
-        {/*     <Emailpopup />
+       
+            <Emailpopup />
               <ScrollUp />
               <Hero />
               <Features />
-              <AboutSectionOne /> */}
+              <AboutSectionOne />
 
 
       {/*       not required */}
