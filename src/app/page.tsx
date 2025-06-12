@@ -24,17 +24,18 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-        <div>Add commentMore actions
-      <h1>Your Application is down.....!!!!!</h1>
-      </div>
-{/*     <Emailpopup />
-      <ScrollUp />
-      <Hero />
-      <Features />
-      <AboutSectionOne /> */}
+      
+        <div>
+          <h1>Your Application is down.....!!!!!</h1>
+        </div>
+        {/*     <Emailpopup />
+              <ScrollUp />
+              <Hero />
+              <Features />
+              <AboutSectionOne /> */}
 
 
-{/*       not required */}
+      {/*       not required */}
       
       {/* <Video /> */}
       {/* <Brands /> */}
